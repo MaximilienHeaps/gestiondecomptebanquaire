@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de création d'agence.</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="agence.php" />
+</head>
+<body style="background-color: #bebebe;">
+
+    <form action="agence.php" method="post">
+        <div>
+            <button><a href="siteban.html">Acceuil</a></button>
+        </div>
+        
+        <!--Choix de l'agence-->         
+        <div id="head"> <center><h2>-- Nom agence--</h2></center>             
+            <select id='Agence' name='Agence' onchange="show_Agence()">                 
+                <option selected value='0'>Choisissez le nom de votre agence</option>                 
+                <option value='1'>GMF</option>                 
+                <option value='2'>Carrefour</option>                 
+                <option value='3'>Maif</option>                 
+                <option value='4'>LCL</option>                 
+                <option value='5'>Caisse d'épargne</option>                 
+                <option value='6'>Crédit agricole</option>                 
+                <option value='7'>BNP Paribas</option>                 
+                <option value='8'>Hello Bank!</option>                 
+                <option value='9'>Société générale</option>                 
+                <option value='10'>Axa</option>                 
+                <option value='11'>Orange Bank</option>                 
+                <option value='12'>Crédit mutuelle</option>             
+            </select>         
+        </div>
+
+        <!--Adresse-->
+    
+        <div>
+            <label style="background-color: #bebebe;" for="Adresse">Adresse de l'agence : </label>
+            <input type="text" id="Adresse" name="Adresse">
+        </div>
+        
+        <!--Code Postal-->
+        
+        <div>
+            <label style="background-color: #bebebe;" for="Code Postal">Code Postal : </label>
+            <input type="text" id="Code_Postal" name="Code_Postal">
+        </div>
+        
+        <br>
+        <hr>
+        <br>
+
+        <!--Portable-->
+        <center><legend><h2>--Contact--</h2></legend></center>
+        <div>
+            <label style="background-color: #bebebe;" for="Port">Télephone : </label>
+            <input type="text" id="Télephone" name="Téléphone">
+        </div>
+
+        <div>
+            <label style="background-color: #bebebe;" for="Mail">Mail de contact : </label>
+            <input type="text" id="Mail" name="Mail">
+        </div>
+        
+        <!--Envoyer-->
+        
+        <br>
+        <hr>
+        <br>
+
+        <p>
+            <input type="submit" value="Envoyer"/>
+        </p>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+"Id Agence";"Id Clients";Nom;Prénom;"Date de naissance";Sexe;Adresse;Ville;"Code Postal";"Tél Port";"Tél Fixe";Mail
+1;1;Leclerc;Charles;25/12/1998;H;"78 rue de Cannel";Nice;83540;0787946325;0458769542;charlesleclerc@formula1.com
+1;2;"Le goff";Christophe;25/12/1999;H;"79 rue de Cannel";Amiens;83541;0787946326;0458769543;christophelegoff@gmail.com
+2;1;C;Nicolas;25/12/2000;H;"80 rue de Cannel";Lens;83542;0787946327;0458769544;nicolas@hotmail.fr
+2;2;Loiseau;François;25/12/2000;H;"17 rue de a";Arere;58798;0547896455;0465156447;loiseau@gmail.com

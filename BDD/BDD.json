@@ -1,0 +1,145 @@
+{
+    "_commentaires": [
+        "a lire pour la lecture et l'ecriture des cles https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods",
+        "format agence (numero compte (sur 3 chiffres)) auto-incrementes. Exemples: (001, 002, 003, ...)\n",
+        "format client (2 lettres et 6 chiffres) auto-incrementes (initiale nom+prenom, cle agence, numero client (sur 3 chiffres)). Exemples: (CF001001, MH001002, LM002001, ...)\n",
+        "format compte (cle client (sans lettres), numero compte (sur 3 chiffres), type de compte (sur 2 chiffres)). Exemples: (00100100101, 00100100202, 00100200103...)"
+    ],
+
+    "Agences": [
+        {
+            "IdAgence": "001",
+            "nom": "Carrefour Banque",
+            "adresse": "80 avenue de la concorde",
+            "ville": "Paris",
+            "codePostal": "75000",
+            "Clients": [
+                {
+                    "IdClients": "LC001001",
+                    "nom": "Leclerc",
+                    "prenom": "Charles",
+                    "dateNaiss": "25/12/1998",
+                    "sexe": "H",
+                    "adresse": "78 rue de Cannel",
+                    "ville": "Nice",
+                    "codePostal": "83540",
+                    "tPort": "0787946325",
+                    "tFixe": "0458769542",
+                    "mail": "charlesleclerc@formula1.com",
+                    "Comptes": [
+                        {
+                            "IdCompte": "00100100101",
+                            "Type": "C",
+                            "Decouvert": true,
+                            "Solde": 400
+                        },
+                        {
+                            "IdCompte": "00100100202",
+                            "Type": "A",
+                            "Decouvert": true,
+                            "Solde": 657.21
+                        },
+                        {
+                            "IdCompte": "00100100303",
+                            "Type": "PEL",
+                            "Decouvert": true,
+                            "Solde": 10580.81
+                        }
+                    ]
+                },
+                {
+                    "IdClients": "LC001002",
+                    "nom": "Le goff",
+                    "prenom": "Christophe",
+                    "dateNaiss": "25/12/1998",
+                    "sexe": "H",
+                    "adresse": "79 rue de Cannel",
+                    "ville": "Amiens",
+                    "codePostal": "83541",
+                    "tPort": "0787946326",
+                    "tFixe": "0458769543",
+                    "mail": "christophelegoff@gmail.com",
+                    "Comptes": [
+                        {
+                            "IdCompte": "00100200101",
+                            "Type": "C",
+                            "Decouvert": true,
+                            "Solde": 10580.81
+                        },
+                        {
+                            "IdCompte": "00100200202",
+                            "Type": "A",
+                            "Decouvert": true,
+                            "Solde": 657.21
+                        },
+                        {
+                            "IdCompte": "00100200303",
+                            "Type": "PEL",
+                            "Decouvert": true,
+                            "Solde": 10580.81
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "IdAgence": "002",
+            "nom": "BNB Paribas",
+            "adresse": "84 boulevard du tacos",
+            "ville": "Rtila",
+            "codePostal": "78459",
+            "Clients": [
+                {
+                    "IdClients": "CN002001",
+                    "nom": "C",
+                    "prenom": "Nicolas",
+                    "dateNaiss": "25/12/2000",
+                    "sexe": "H",
+                    "adresse": "80 rue de Cannel",
+                    "ville": "Lens",
+                    "codePostal": "83542",
+                    "tPort": "0787946327",
+                    "tFixe": "0458769544",
+                    "mail": "nicolas@hotmail.fr",
+                    "Comptes": [
+                        {
+                            "IdCompte": "00200100101",
+                            "Type": "C",
+                            "Decouvert": true,
+                            "Solde": 400
+                        }
+                    ]
+                },
+                {
+                    "IdClients": "LF002002",
+                    "nom": "Loiseau",
+                    "prenom": "François",
+                    "dateNaiss": "25/12/2000",
+                    "sexe": "H",
+                    "adresse": "17 rue de a",
+                    "ville": "Arere",
+                    "codePostal": "58798",
+                    "tPort": "0547896455",
+                    "tFixe": "0465156447",
+                    "mail": "loiseau@gmail.com",
+                    "Comptes": [
+                        {
+                            "IdCompte": "00200200102",
+                            "Type": "A",
+                            "Decouvert": true,
+                            "Solde": 50000
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "IdAgence": "003",
+            "nom": "GMF",
+            "adresse": "17 rue utile",
+            "ville": "Nantes",
+            "codePostal": "45147",
+            "Clients": []
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription client</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="compte.js"></script>
+</head>
+
+<body style="background-color: #bebebe;">
+    
+    <div id="a"></div>
+
+    <div>
+        <button><a href="siteban.html">Acceuil</a></button>
+    </div>
+
+    <form name="Fagence" id="Fagence"> <!--Id_Agence-->
+
+        <div> <center><h2>--AGENCE--</h2></center>
+            <select id='IdAgence' onchange="showAgences(value)">
+                <option selected value="">Choisissez votre Agence</option>
+                <option value='001'>Carrefour Banque</option>
+                <option value='002'>BNB Paribas</option>
+                <option value='003'>GMF</option>
+            </select>
+        </div>
+
+        <hr>
+
+    </form>
+
+    <form name="Fclient" id="Fclient"> <!--Id_Client-->
+
+        <center><legend><h2>--CLIENT--</h2></legend></center>
+
+        <div>
+            <label style="background-color: #bebebe;" for="Nom">Identifiant client : </label>
+            <input type="text" id="IdClient" name="drone" value="">
+        </div>
+
+        <hr>
+
+    </form>
+
+    <form name="Fcompte" id="Fcompte"> <!--infos compte-->
+
+        <fieldset> <center><legend><h2>--TYPE DE COMPTE--</h2></legend></center> <!--type compte-->
+
+            <div>
+                <input type="radio" id="C" name="type" value="C">
+                <label style="background-color: #bebebe;" for="C">Courant</label>
+            </div>
+
+            <div>
+                <input type="radio" id="A" name="type" value="A">
+                <label style="background-color: #bebebe;" for="A">Livret A</label>
+            </div>
+
+            <div>
+                <input type="radio" id="PEL" name="type" value="PEL">
+                <label style="background-color: #bebebe;" for="PEL">Plan Epargne Logement</label>
+            </div>
+
+        </fieldset>
+
+        <hr>
+
+        <fieldset> <center><legend><h2>--DECOUVERT--</h2></legend></center> <!--decouvert compte-->
+
+            <div>
+                <input type="radio" id="Non Autorise" name="decouvert" value=false>
+                <label style="background-color: #bebebe;" for="Livret A">Non Autorise</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Autorise" name="decouvert" value=true>
+                <label style="background-color: #bebebe;" for="Plan épargne">Autorise</label>
+            </div>
+
+        </fieldset>
+
+        <hr>
+
+        <center><legend><h2>--SOLDE--</h2></legend></center> <!--Solde-->
+
+        <div>
+            <label style="background-color: #bebebe;" for="Nom">Solde : </label>
+            <input type="text" id="Solde" name="drone">
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div>
+            <input type="button" value="--Creer--" onClick="addCompte(Fagence,Fclient,Fcompte)"> <!--Creer-->
+        </div>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription client</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #bebebe;">
+        
+    <form action="client.php" method="post">
+
+        <div>
+            <button><a href="siteban.html">Acceuil</a></button>
+        </div>
+        
+        <div id="head"> <center><h2>--Type d'agence--</h2></center>             
+            <select id='id' name="city_id" onchange="show_city()">                 
+                <option selected value='0'>Choisissez votre Agence par rapport à votre ville</option>                 
+                <option value='1'>Lille(59)</option>                 
+                <option value='2'>Montpellier(34)</option>                 
+                <option value='3'>Marseille(13)</option>                 
+                <option value='4'>Lyon(69)</option>                 
+                <option value='5'>Bordeaux(33)</option>                 
+                <option value='6'>Toulouse(31)</option>                 
+                <option value='7'>Nice(83)</option>                 
+                <option value='8'>Paris(75)</option>                 
+                <option value='9'>Reims(51)</option>                 
+                <option value='10'>Strasbourg(68)</option>                 
+                <option value='11'>Nantes(44)</option>                 
+                <option value='12'>Rennes(35)</option>             
+            </select>         
+        </div>
+        
+        <!--Nom-->
+        <hr>
+        <center><legend><h2>--Identité--</h2></legend></center>
+        <div>
+            <label style="background-color: #bebebe;" for="Nom">Votre Nom ou Nom de jeune fille : </label>
+            <input type="text" id="id" name="name_id">
+        </div>
+        
+        <!--Prénom-->
+        
+        <div>
+            <label style="background-color:#bebebe;" for="Prénom">Votre Prénom : </label>
+            <input type="text" id="id" name="prenom_id">
+        </div>
+        
+        <!--L'âge du client-->
+        <div>
+            <label style="background-color:#bebebe;" for="Age"> Votre âge : </label>
+            <input type="text" id="id" name="age_id">
+        </div>
+        
+        <hr>
+
+        <!--Sexe du Sexe-->
+         <fieldset>
+            <center><legend><h2>--Sexe--</h2></legend></center>
+            <div>
+                <input type="radio" id="id" name="sexe_id" value="Homme">
+                <label style="background-color: #bebebe;" for="Homme">Homme </label>
+            </div>
+
+            <div>
+                <input type="radio" id="id" name="sexe_id" value="Femme">
+                <label style="background-color: #bebebe;" for="Femme">Femme </label>
+            </div>
+
+            <div>
+                <input type="radio" id="id" name="sexe_id" value="Autre">
+                <label style="background-color: #bebebe;" for="Autre">Autre </label>
+            </div>
+        </fieldset>
+        
+        <br>
+        <hr>
+        <br>
+
+        <!--Adresse-->
+        <center><legend><h2>--Adresse--</h2></legend></center>
+        <div>
+            <label style="background-color: #bebebe;" for="Adresse">Adresse : </label>
+            <input type="text" id="id" name="adress_id">
+        </div>
+        
+        <!--Code Postal-->
+        
+        <div>
+            <label style="background-color: #bebebe;" for="Code Postal">Code Postal : </label>
+            <input type="text" id="id" name="code_id">
+        </div>
+        
+        <br>
+        <hr>
+        <br>
+
+        <!--Portable-->
+        <center><legend><h2>--Contact--</h2></legend></center>
+        <div>
+            <label style="background-color: #bebebe;" for="Port">Télephone portable : </label>
+            <input type="text" id="id" name="port_id">
+        </div>
+        
+        <!--Fixe-->
+        
+        <div>
+            <label style="background-color: #bebebe;" for="Fix">Télephone fix : </label>
+            <input type="text" id="id" name="fixe_id">
+        </div>
+        
+        <!--Mail-->
+
+        <div>
+            <label style="background-color: #bebebe;" for="Mail">Mail : </label>
+            <input type="text" id="id" name="mail_id">
+        </div>
+        
+        <!--Envoyer-->
+        
+        <br>
+        <hr>
+        <br>
+
+        <div>
+            <button type="submit"> --Créer-- </button>
+        </div>
+    </form>
+</body>
+</html>
